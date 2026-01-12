@@ -69,3 +69,38 @@ footer {
     transform: scale(1.08);
     box-shadow: 0 0 15px rgba(255,255,255,.4);
 }
+
+.btn-download {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  padding: 12px 26px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+
+  /* posisi tengah */
+  display: block;
+  margin: 30px auto 0 auto; /* atas 30px, kiri-kanan auto = center */
+}
+
+.btn-download:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+.btn-download:active {
+  transform: scale(0.98);
+}
+
+/* Hilang saat print */
+@media print {
+  .btn-download {
+    display: none;
+  }
+}
+
+
